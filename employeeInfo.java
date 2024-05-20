@@ -1,8 +1,7 @@
 package employeeInfo;
 
 public class employeeInfo {
-    private String name;
-    private String email;
+    private String name,email;
 
     // Setter method for name
     public void setName(String name) {
