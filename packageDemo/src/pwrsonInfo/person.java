@@ -5,11 +5,30 @@ public class person {
     private String name;
     private Country country;
     private State state;
-
-    public person(String name, Country country, State state) {
+    private int age;
+    private int income;
+       
+    
+    public person(String name, Country country, State state,int age,int income) {
         this.name = name;
         this.country = country;
         this.state = state;
+        this.age = age;
+        this.income = income;
+        
+    }
+    
+	public void setAge(int age) {
+    	this.age= age;
+    	}
+    public int getAge() {
+    	return age;
+    }
+    public void setIncome(int income) {
+    	this.income = income;
+    }
+    public int getIncome() {
+    	return income;
     }
 
     public String getName() {
@@ -35,9 +54,11 @@ public class person {
     public void setState(State state) {
         this.state = state;
     }
+	@Override
+	public String toString() {
+		return "person [name=" + name + ", country=" + country + ", state=" + state + ", age=" + age + ", income="
+				+ income + "]";
+	}
 
-    @Override
-    public String toString() {
-        return "Person [name=" + name + ", country=" + country + ", state=" + state + "]";
-    }
+
 }
